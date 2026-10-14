@@ -3,7 +3,7 @@
 **124 dates and times written the way Indonesians type them in chat, with the moment each one
 means.**
 
-"bsk jam 10", "jam setengah 8 malam", "tgl 20", "malam Minggu", "akhir bulan ini". A WhatsApp
+"bsk jam 10", "jam setengah 8 malam", "tgl 17", "malam Minggu", "akhir bulan ini". A WhatsApp
 booking bot, a reminder app or a lead tracker in Indonesia reads phrases like these all day. This is
 a test set for whatever reads them: each phrase says which date (and time, when it states one) a
 person means, against a fixed "now": **Wednesday 14 October 2026, 10:00 in Jakarta**.
@@ -39,7 +39,7 @@ The misses that matter most in a chat:
 - "jam 8 kurang 15 malam" (19:45) is read as **08:00 tomorrow**.
 - "akhir bulan ini" (the end of this month) is read as **1 October**, a deadline already gone.
 - "malam Minggu" (Saturday night) is read as **tonight**, Wednesday.
-- "tgl 20" (the 20th) is not found at all.
+- "tgl 17" (the 17th) is not found at all.
 
 The ten fixes, one small change each (in `results/per-fix/`, every one measured on its own and none
 breaking a phrase the release reads right). Nine are in the Indonesian locale; one is in chrono's core:
