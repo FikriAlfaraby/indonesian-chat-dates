@@ -29,7 +29,7 @@ npm downloads a week). It added Indonesian in version 2.10.3. Run the way a book
 | Parser | Right | Wrong date | Wrong time | Missed |
 |---|---:|---:|---:|---:|
 | chrono-node 2.10.3 | 77 | 26 | 4 | 17 |
-| chrono-node 2.10.3 + 9 fixes | 115 | 7 | 0 | 2 |
+| chrono-node 2.10.3 + 10 fixes | 117 | 5 | 0 | 2 |
 
 The misses that matter most in a chat:
 
@@ -41,8 +41,8 @@ The misses that matter most in a chat:
 - "malam Minggu" (Saturday night) is read as **tonight**, Wednesday.
 - "tgl 20" (the 20th) is not found at all.
 
-The nine fixes, one small change each (in `results/per-fix/`, every one measured on its own and none
-breaking a phrase the release reads right):
+The ten fixes, one small change each (in `results/per-fix/`, every one measured on its own and none
+breaking a phrase the release reads right). Nine are in the Indonesian locale; one is in chrono's core:
 
 | Fix | Phrases it fixes |
 |---|---:|
@@ -55,14 +55,15 @@ breaking a phrase the release reads right):
 | A weekday followed by besok: Senin besok is the coming Monday | 1 |
 | Earlier today: tadi pagi | 1 |
 | Approximate hours: jam 9an | 1 |
+| Core: `forwardDate` keeps a weekday the text says is past (Selasa lalu, and English "last Tuesday") | 2 |
 
 ### What is still wrong, and why
 
 - **"tadi malam" (last night)** is read as midnight at the start of today. That is the locale's
   existing, tested behaviour; it is left for the maintainer to decide.
-- **"Kamis kemarin", "Selasa lalu", "17 Agustus kemarin"** say plainly that the date is past, but
-  `forwardDate` moves them into the future. chrono does the same in English ("last Tuesday" becomes
-  next Tuesday), so this belongs to chrono's core, not to the Indonesian locale.
+- **"17 Agustus kemarin"** (the 17 August that just passed) says the date is past, but `forwardDate`
+  moves it to next year. The core fix covers weekdays ("Selasa lalu", "last Tuesday"), not month
+  names.
 - **"jam 2", "jam 4an"** without a day period are read as 2 and 4 in the morning, as chrono reads
   English "at 2". In a chat at 10 am, people mean the afternoon.
 - **"subuh", "habis maghrib"** name times by the prayer schedule, which moves with place and season.

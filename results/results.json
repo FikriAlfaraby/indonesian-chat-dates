@@ -9,9 +9,9 @@
       "missed": 17
     },
     "fixed": {
-      "parser": "chrono-node 2.10.3 + 9 fixes",
-      "right": 115,
-      "wrong date": 7,
+      "parser": "chrono-node 2.10.3 + 10 fixes",
+      "right": 117,
+      "wrong date": 5,
       "wrong time": 0,
       "missed": 2
     }
@@ -27,7 +27,7 @@
       "group": "weekday",
       "phrases": 18,
       "release": 11,
-      "fixed": 16
+      "fixed": 18
     },
     {
       "group": "date",
@@ -61,6 +61,14 @@
     }
   ],
   "fixes": [
+    {
+      "branch": "forward-date-past-weekday",
+      "fixes": [
+        "028",
+        "029"
+      ],
+      "breaks": []
+    },
     {
       "branch": "id-approximate-hours",
       "fixes": [
@@ -891,11 +899,11 @@
       "fixed": {
         "id": "028",
         "read": {
-          "date": "2026-10-15",
+          "date": "2026-10-08",
           "time": "12:00",
           "matched": "Kamis kemarin"
         },
-        "outcome": "wrong date"
+        "outcome": "right"
       }
     },
     {
@@ -921,11 +929,11 @@
       "fixed": {
         "id": "029",
         "read": {
-          "date": "2026-10-20",
+          "date": "2026-10-13",
           "time": "12:00",
           "matched": "Selasa lalu"
         },
-        "outcome": "wrong date"
+        "outcome": "right"
       }
     },
     {

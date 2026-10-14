@@ -1,5 +1,5 @@
 {
-  "parser": "chrono-node 2.10.3 + 9 fixes",
+  "parser": "chrono-node 2.10.3 + 10 fixes",
   "runtime": "node v25.7.0",
   "reference": "2026-10-14T10:00:00+07:00",
   "readings": [
@@ -249,20 +249,20 @@
     {
       "id": "028",
       "read": {
-        "date": "2026-10-15",
+        "date": "2026-10-08",
         "time": "12:00",
         "matched": "Kamis kemarin"
       },
-      "outcome": "wrong date"
+      "outcome": "right"
     },
     {
       "id": "029",
       "read": {
-        "date": "2026-10-20",
+        "date": "2026-10-13",
         "time": "12:00",
         "matched": "Selasa lalu"
       },
-      "outcome": "wrong date"
+      "outcome": "right"
     },
     {
       "id": "030",

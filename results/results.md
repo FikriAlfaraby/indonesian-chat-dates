@@ -6,14 +6,14 @@ Indonesian parser, with `forwardDate: true`.
 | Parser | Right | Wrong date | Wrong time | Missed |
 |---|---:|---:|---:|---:|
 | chrono-node 2.10.3 | 77 | 26 | 4 | 17 |
-| chrono-node 2.10.3 + 9 fixes | 115 | 7 | 0 | 2 |
+| chrono-node 2.10.3 + 10 fixes | 117 | 5 | 0 | 2 |
 
 ## By kind of phrase
 
 | Kind | Phrases | Right in the release | Right with the fixes |
 |---|---:|---:|---:|
 | relative day | 17 | 9 | 16 |
-| weekday | 18 | 11 | 16 |
+| weekday | 18 | 11 | 18 |
 | date | 22 | 15 | 22 |
 | time | 22 | 11 | 19 |
 | date and time | 15 | 10 | 15 |
@@ -24,6 +24,7 @@ Indonesian parser, with `forwardDate: true`.
 
 | Branch | Phrases it fixes | Phrases it breaks |
 |---|---:|---:|
+| forward-date-past-weekday | 2 | 0 |
 | id-approximate-hours | 1 | 0 |
 | id-chat-abbreviations | 12 | 0 |
 | id-day-of-month | 6 | 0 |
@@ -65,8 +66,8 @@ Indonesian parser, with `forwardDate: true`.
 | 025 | Jum'at | 2026-10-16 | 2026-10-16 12:00 | 2026-10-16 12:00 |
 | 026 | Jumat depan | 2026-10-16 or 2026-10-23 | 2026-10-23 12:00 | 2026-10-23 12:00 |
 | 027 | Rabu depan | 2026-10-21 | 2026-10-21 12:00 | 2026-10-21 12:00 |
-| 028 | Kamis kemarin | 2026-10-08 | 2026-10-15 12:00 (wrong date) | 2026-10-15 12:00 (wrong date) |
-| 029 | Selasa lalu | 2026-10-13 or 2026-10-06 | 2026-10-20 12:00 (wrong date) | 2026-10-20 12:00 (wrong date) |
+| 028 | Kamis kemarin | 2026-10-08 | 2026-10-15 12:00 (wrong date) | 2026-10-08 12:00 |
+| 029 | Selasa lalu | 2026-10-13 or 2026-10-06 | 2026-10-20 12:00 (wrong date) | 2026-10-13 12:00 |
 | 030 | malam Minggu | 2026-10-17 18:00–23:59 | 2026-10-14 20:00 (wrong date) | 2026-10-17 20:00 |
 | 031 | malam Jumat | 2026-10-15 18:00–23:59 | 2026-10-14 12:00 (wrong date) | 2026-10-15 20:00 |
 | 032 | akhir pekan ini | 2026-10-17 to 2026-10-18 | 2026-10-15 12:00 (wrong date) | 2026-10-17 12:00 |
