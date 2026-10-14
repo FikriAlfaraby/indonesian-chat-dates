@@ -1,0 +1,3439 @@
+{
+  "reference": "2026-10-14T10:00:00+07:00",
+  "summary": {
+    "release": {
+      "parser": "chrono-node 2.10.3",
+      "right": 77,
+      "wrong date": 26,
+      "wrong time": 4,
+      "missed": 17
+    },
+    "fixed": {
+      "parser": "chrono-node 2.10.3 + 9 fixes",
+      "right": 115,
+      "wrong date": 7,
+      "wrong time": 0,
+      "missed": 2
+    }
+  },
+  "groups": [
+    {
+      "group": "relative day",
+      "phrases": 17,
+      "release": 9,
+      "fixed": 16
+    },
+    {
+      "group": "weekday",
+      "phrases": 18,
+      "release": 11,
+      "fixed": 16
+    },
+    {
+      "group": "date",
+      "phrases": 22,
+      "release": 15,
+      "fixed": 22
+    },
+    {
+      "group": "time",
+      "phrases": 22,
+      "release": 11,
+      "fixed": 19
+    },
+    {
+      "group": "date and time",
+      "phrases": 15,
+      "release": 10,
+      "fixed": 15
+    },
+    {
+      "group": "duration",
+      "phrases": 11,
+      "release": 9,
+      "fixed": 11
+    },
+    {
+      "group": "in a message",
+      "phrases": 19,
+      "release": 12,
+      "fixed": 16
+    }
+  ],
+  "fixes": [
+    {
+      "branch": "id-approximate-hours",
+      "fixes": [
+        "082"
+      ],
+      "breaks": []
+    },
+    {
+      "branch": "id-chat-abbreviations",
+      "fixes": [
+        "002",
+        "006",
+        "007",
+        "009",
+        "012",
+        "017",
+        "059",
+        "060",
+        "081",
+        "101",
+        "105",
+        "106"
+      ],
+      "breaks": []
+    },
+    {
+      "branch": "id-day-of-month",
+      "fixes": [
+        "036",
+        "037",
+        "038",
+        "048",
+        "086",
+        "108"
+      ],
+      "breaks": []
+    },
+    {
+      "branch": "id-earlier-today",
+      "fixes": [
+        "013"
+      ],
+      "breaks": []
+    },
+    {
+      "branch": "id-half-quarter-times",
+      "fixes": [
+        "070",
+        "071",
+        "072",
+        "073",
+        "074",
+        "075",
+        "091"
+      ],
+      "breaks": []
+    },
+    {
+      "branch": "id-month-parts",
+      "fixes": [
+        "049",
+        "050",
+        "051",
+        "112"
+      ],
+      "breaks": []
+    },
+    {
+      "branch": "id-weekday-besok",
+      "fixes": [
+        "020"
+      ],
+      "breaks": []
+    },
+    {
+      "branch": "id-weekday-eve",
+      "fixes": [
+        "030",
+        "031",
+        "093",
+        "116"
+      ],
+      "breaks": []
+    },
+    {
+      "branch": "id-weekend",
+      "fixes": [
+        "032",
+        "033"
+      ],
+      "breaks": []
+    }
+  ],
+  "phrases": [
+    {
+      "id": "001",
+      "group": "relative day",
+      "text": "besok",
+      "date": "2026-10-15",
+      "time": null,
+      "means": "tomorrow",
+      "release": {
+        "id": "001",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "besok"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "001",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "besok"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "002",
+      "group": "relative day",
+      "text": "bsk",
+      "date": "2026-10-15",
+      "time": null,
+      "means": "tomorrow",
+      "note": "The usual chat abbreviation of besok.",
+      "release": {
+        "id": "002",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "002",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "bsk"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "003",
+      "group": "relative day",
+      "text": "lusa",
+      "date": "2026-10-16",
+      "time": null,
+      "means": "the day after tomorrow",
+      "release": {
+        "id": "003",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "lusa"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "003",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "lusa"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "004",
+      "group": "relative day",
+      "text": "besok lusa",
+      "date": "2026-10-16",
+      "time": null,
+      "means": "the day after tomorrow",
+      "release": {
+        "id": "004",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "besok lusa"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "004",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "besok lusa"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "005",
+      "group": "relative day",
+      "text": "kemarin",
+      "date": "2026-10-13",
+      "time": null,
+      "means": "yesterday",
+      "release": {
+        "id": "005",
+        "read": {
+          "date": "2026-10-13",
+          "time": "10:00",
+          "matched": "kemarin"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "005",
+        "read": {
+          "date": "2026-10-13",
+          "time": "10:00",
+          "matched": "kemarin"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "006",
+      "group": "relative day",
+      "text": "kemaren",
+      "date": "2026-10-13",
+      "time": null,
+      "means": "yesterday",
+      "note": "Informal spelling of kemarin.",
+      "release": {
+        "id": "006",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "006",
+        "read": {
+          "date": "2026-10-13",
+          "time": "10:00",
+          "matched": "kemaren"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "007",
+      "group": "relative day",
+      "text": "kmrn",
+      "date": "2026-10-13",
+      "time": null,
+      "means": "yesterday",
+      "note": "Chat abbreviation of kemarin.",
+      "release": {
+        "id": "007",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "007",
+        "read": {
+          "date": "2026-10-13",
+          "time": "10:00",
+          "matched": "kmrn"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "008",
+      "group": "relative day",
+      "text": "hari ini",
+      "date": "2026-10-14",
+      "time": null,
+      "means": "today",
+      "release": {
+        "id": "008",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:00",
+          "matched": "hari ini"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "008",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:00",
+          "matched": "hari ini"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "009",
+      "group": "relative day",
+      "text": "hr ini",
+      "date": "2026-10-14",
+      "time": null,
+      "means": "today",
+      "note": "Chat abbreviation of hari ini.",
+      "release": {
+        "id": "009",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "009",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:00",
+          "matched": "hr ini"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "010",
+      "group": "relative day",
+      "text": "nanti sore",
+      "date": "2026-10-14",
+      "time": {
+        "from": "15:00",
+        "to": "18:00"
+      },
+      "means": "this afternoon",
+      "release": {
+        "id": "010",
+        "read": {
+          "date": "2026-10-14",
+          "time": "15:00",
+          "matched": "sore"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "010",
+        "read": {
+          "date": "2026-10-14",
+          "time": "15:00",
+          "matched": "sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "011",
+      "group": "relative day",
+      "text": "nanti malam",
+      "date": "2026-10-14",
+      "time": {
+        "from": "18:00",
+        "to": "23:59"
+      },
+      "means": "tonight",
+      "release": {
+        "id": "011",
+        "read": {
+          "date": "2026-10-14",
+          "time": "22:00",
+          "matched": "nanti malam"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "011",
+        "read": {
+          "date": "2026-10-14",
+          "time": "22:00",
+          "matched": "nanti malam"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "012",
+      "group": "relative day",
+      "text": "ntar malem",
+      "date": "2026-10-14",
+      "time": {
+        "from": "18:00",
+        "to": "23:59"
+      },
+      "means": "tonight",
+      "note": "ntar = nanti, malem = malam, both informal.",
+      "release": {
+        "id": "012",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "012",
+        "read": {
+          "date": "2026-10-14",
+          "time": "22:00",
+          "matched": "ntar malem"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "013",
+      "group": "relative day",
+      "text": "tadi pagi",
+      "date": "2026-10-14",
+      "time": {
+        "from": "05:00",
+        "to": "11:00"
+      },
+      "means": "this morning (earlier today)",
+      "release": {
+        "id": "013",
+        "read": {
+          "date": "2026-10-15",
+          "time": "06:00",
+          "matched": "pagi"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "013",
+        "read": {
+          "date": "2026-10-14",
+          "time": "06:00",
+          "matched": "tadi pagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "014",
+      "group": "relative day",
+      "text": "tadi malam",
+      "date": "2026-10-13",
+      "time": {
+        "from": "18:00",
+        "to": "23:59"
+      },
+      "means": "last night",
+      "release": {
+        "id": "014",
+        "read": {
+          "date": "2026-10-14",
+          "time": "00:00",
+          "matched": "tadi malam"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "014",
+        "read": {
+          "date": "2026-10-14",
+          "time": "00:00",
+          "matched": "tadi malam"
+        },
+        "outcome": "wrong date"
+      }
+    },
+    {
+      "id": "015",
+      "group": "relative day",
+      "text": "besok pagi",
+      "date": "2026-10-15",
+      "time": {
+        "from": "05:00",
+        "to": "11:00"
+      },
+      "means": "tomorrow morning",
+      "release": {
+        "id": "015",
+        "read": {
+          "date": "2026-10-15",
+          "time": "06:00",
+          "matched": "besok pagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "015",
+        "read": {
+          "date": "2026-10-15",
+          "time": "06:00",
+          "matched": "besok pagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "016",
+      "group": "relative day",
+      "text": "besok malam",
+      "date": "2026-10-15",
+      "time": {
+        "from": "18:00",
+        "to": "23:59"
+      },
+      "means": "tomorrow evening",
+      "release": {
+        "id": "016",
+        "read": {
+          "date": "2026-10-15",
+          "time": "20:00",
+          "matched": "besok malam"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "016",
+        "read": {
+          "date": "2026-10-15",
+          "time": "20:00",
+          "matched": "besok malam"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "017",
+      "group": "relative day",
+      "text": "bsk sore",
+      "date": "2026-10-15",
+      "time": {
+        "from": "15:00",
+        "to": "18:00"
+      },
+      "means": "tomorrow afternoon",
+      "release": {
+        "id": "017",
+        "read": {
+          "date": "2026-10-14",
+          "time": "15:00",
+          "matched": "sore"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "017",
+        "read": {
+          "date": "2026-10-15",
+          "time": "15:00",
+          "matched": "bsk sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "018",
+      "group": "weekday",
+      "text": "Senin",
+      "date": "2026-10-19",
+      "time": null,
+      "means": "Monday (the coming one)",
+      "release": {
+        "id": "018",
+        "read": {
+          "date": "2026-10-19",
+          "time": "12:00",
+          "matched": "Senin"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "018",
+        "read": {
+          "date": "2026-10-19",
+          "time": "12:00",
+          "matched": "Senin"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "019",
+      "group": "weekday",
+      "text": "Senin depan",
+      "date": "2026-10-19",
+      "time": null,
+      "means": "next Monday",
+      "release": {
+        "id": "019",
+        "read": {
+          "date": "2026-10-19",
+          "time": "12:00",
+          "matched": "Senin depan"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "019",
+        "read": {
+          "date": "2026-10-19",
+          "time": "12:00",
+          "matched": "Senin depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "020",
+      "group": "weekday",
+      "text": "Senin besok",
+      "date": "2026-10-19",
+      "time": null,
+      "means": "this coming Monday",
+      "note": "Colloquial: 'besok' after a weekday means the coming one, not tomorrow.",
+      "release": {
+        "id": "020",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "Senin besok"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "020",
+        "read": {
+          "date": "2026-10-19",
+          "time": "12:00",
+          "matched": "Senin besok"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "021",
+      "group": "weekday",
+      "text": "hari Minggu",
+      "date": "2026-10-18",
+      "time": null,
+      "means": "Sunday",
+      "release": {
+        "id": "021",
+        "read": {
+          "date": "2026-10-18",
+          "time": "12:00",
+          "matched": "hari Minggu"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "021",
+        "read": {
+          "date": "2026-10-18",
+          "time": "12:00",
+          "matched": "hari Minggu"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "022",
+      "group": "weekday",
+      "text": "Ahad",
+      "date": "2026-10-18",
+      "time": null,
+      "means": "Sunday",
+      "release": {
+        "id": "022",
+        "read": {
+          "date": "2026-10-18",
+          "time": "12:00",
+          "matched": "Ahad"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "022",
+        "read": {
+          "date": "2026-10-18",
+          "time": "12:00",
+          "matched": "Ahad"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "023",
+      "group": "weekday",
+      "text": "Sabtu ini",
+      "date": "2026-10-17",
+      "time": null,
+      "means": "this Saturday",
+      "release": {
+        "id": "023",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "Sabtu ini"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "023",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "Sabtu ini"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "024",
+      "group": "weekday",
+      "text": "Jumat",
+      "date": "2026-10-16",
+      "time": null,
+      "means": "Friday",
+      "release": {
+        "id": "024",
+        "read": {
+          "date": "2026-10-16",
+          "time": "12:00",
+          "matched": "Jumat"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "024",
+        "read": {
+          "date": "2026-10-16",
+          "time": "12:00",
+          "matched": "Jumat"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "025",
+      "group": "weekday",
+      "text": "Jum'at",
+      "date": "2026-10-16",
+      "time": null,
+      "means": "Friday",
+      "release": {
+        "id": "025",
+        "read": {
+          "date": "2026-10-16",
+          "time": "12:00",
+          "matched": "Jum'at"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "025",
+        "read": {
+          "date": "2026-10-16",
+          "time": "12:00",
+          "matched": "Jum'at"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "026",
+      "group": "weekday",
+      "text": "Jumat depan",
+      "date": [
+        "2026-10-16",
+        "2026-10-23"
+      ],
+      "time": null,
+      "means": "next Friday",
+      "note": "Said on a Wednesday, people mean either this Friday or the one after; both are accepted.",
+      "release": {
+        "id": "026",
+        "read": {
+          "date": "2026-10-23",
+          "time": "12:00",
+          "matched": "Jumat depan"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "026",
+        "read": {
+          "date": "2026-10-23",
+          "time": "12:00",
+          "matched": "Jumat depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "027",
+      "group": "weekday",
+      "text": "Rabu depan",
+      "date": "2026-10-21",
+      "time": null,
+      "means": "Wednesday next week",
+      "release": {
+        "id": "027",
+        "read": {
+          "date": "2026-10-21",
+          "time": "12:00",
+          "matched": "Rabu depan"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "027",
+        "read": {
+          "date": "2026-10-21",
+          "time": "12:00",
+          "matched": "Rabu depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "028",
+      "group": "weekday",
+      "text": "Kamis kemarin",
+      "date": "2026-10-08",
+      "time": null,
+      "means": "last Thursday",
+      "note": "'kemarin' after a weekday means the most recent one.",
+      "release": {
+        "id": "028",
+        "read": {
+          "date": "2026-10-15",
+          "time": "12:00",
+          "matched": "Kamis kemarin"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "028",
+        "read": {
+          "date": "2026-10-15",
+          "time": "12:00",
+          "matched": "Kamis kemarin"
+        },
+        "outcome": "wrong date"
+      }
+    },
+    {
+      "id": "029",
+      "group": "weekday",
+      "text": "Selasa lalu",
+      "date": [
+        "2026-10-13",
+        "2026-10-06"
+      ],
+      "time": null,
+      "means": "last Tuesday",
+      "note": "Yesterday or the week before; both are accepted.",
+      "release": {
+        "id": "029",
+        "read": {
+          "date": "2026-10-20",
+          "time": "12:00",
+          "matched": "Selasa lalu"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "029",
+        "read": {
+          "date": "2026-10-20",
+          "time": "12:00",
+          "matched": "Selasa lalu"
+        },
+        "outcome": "wrong date"
+      }
+    },
+    {
+      "id": "030",
+      "group": "weekday",
+      "text": "malam Minggu",
+      "date": "2026-10-17",
+      "time": {
+        "from": "18:00",
+        "to": "23:59"
+      },
+      "means": "Saturday night",
+      "note": "In Indonesian, 'malam Minggu' is the night before Sunday: Saturday evening.",
+      "release": {
+        "id": "030",
+        "read": {
+          "date": "2026-10-14",
+          "time": "20:00",
+          "matched": "malam"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "030",
+        "read": {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "matched": "malam Minggu"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "031",
+      "group": "weekday",
+      "text": "malam Jumat",
+      "date": "2026-10-15",
+      "time": {
+        "from": "18:00",
+        "to": "23:59"
+      },
+      "means": "Thursday night",
+      "note": "The night before Friday: Thursday evening.",
+      "release": {
+        "id": "031",
+        "read": {
+          "date": "2026-10-14",
+          "time": "12:00",
+          "matched": "malam Jumat"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "031",
+        "read": {
+          "date": "2026-10-15",
+          "time": "20:00",
+          "matched": "malam Jumat"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "032",
+      "group": "weekday",
+      "text": "akhir pekan ini",
+      "date": {
+        "from": "2026-10-17",
+        "to": "2026-10-18"
+      },
+      "time": null,
+      "means": "this weekend",
+      "release": {
+        "id": "032",
+        "read": {
+          "date": "2026-10-15",
+          "time": "12:00",
+          "matched": "pekan ini"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "032",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "akhir pekan ini"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "033",
+      "group": "weekday",
+      "text": "weekend ini",
+      "date": {
+        "from": "2026-10-17",
+        "to": "2026-10-18"
+      },
+      "time": null,
+      "means": "this weekend",
+      "note": "English word, Indonesian grammar; common in chat.",
+      "release": {
+        "id": "033",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "033",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "weekend ini"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "034",
+      "group": "weekday",
+      "text": "Senin pagi",
+      "date": "2026-10-19",
+      "time": {
+        "from": "05:00",
+        "to": "11:00"
+      },
+      "means": "Monday morning",
+      "release": {
+        "id": "034",
+        "read": {
+          "date": "2026-10-19",
+          "time": "06:00",
+          "matched": "Senin pagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "034",
+        "read": {
+          "date": "2026-10-19",
+          "time": "06:00",
+          "matched": "Senin pagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "035",
+      "group": "weekday",
+      "text": "Kamis sore",
+      "date": "2026-10-15",
+      "time": {
+        "from": "15:00",
+        "to": "18:00"
+      },
+      "means": "Thursday afternoon",
+      "release": {
+        "id": "035",
+        "read": {
+          "date": "2026-10-15",
+          "time": "15:00",
+          "matched": "Kamis sore"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "035",
+        "read": {
+          "date": "2026-10-15",
+          "time": "15:00",
+          "matched": "Kamis sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "036",
+      "group": "date",
+      "text": "tgl 17",
+      "date": "2026-10-17",
+      "time": null,
+      "means": "the 17th (of this month)",
+      "note": "tgl is the usual abbreviation of tanggal (date).",
+      "release": {
+        "id": "036",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "036",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "tgl 17"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "037",
+      "group": "date",
+      "text": "tanggal 17",
+      "date": "2026-10-17",
+      "time": null,
+      "means": "the 17th (of this month)",
+      "release": {
+        "id": "037",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "037",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "tanggal 17"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "038",
+      "group": "date",
+      "text": "tanggal 5",
+      "date": "2026-11-05",
+      "time": null,
+      "means": "the 5th (next month, since this month's has passed)",
+      "release": {
+        "id": "038",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "038",
+        "read": {
+          "date": "2026-11-05",
+          "time": "12:00",
+          "matched": "tanggal 5"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "039",
+      "group": "date",
+      "text": "17 Okt",
+      "date": "2026-10-17",
+      "time": null,
+      "means": "17 October",
+      "release": {
+        "id": "039",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "17 Okt"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "039",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "17 Okt"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "040",
+      "group": "date",
+      "text": "25 Oktober",
+      "date": "2026-10-25",
+      "time": null,
+      "means": "25 October",
+      "release": {
+        "id": "040",
+        "read": {
+          "date": "2026-10-25",
+          "time": "12:00",
+          "matched": "25 Oktober"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "040",
+        "read": {
+          "date": "2026-10-25",
+          "time": "12:00",
+          "matched": "25 Oktober"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "041",
+      "group": "date",
+      "text": "1 Nov",
+      "date": "2026-11-01",
+      "time": null,
+      "means": "1 November",
+      "release": {
+        "id": "041",
+        "read": {
+          "date": "2026-11-01",
+          "time": "12:00",
+          "matched": "1 Nov"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "041",
+        "read": {
+          "date": "2026-11-01",
+          "time": "12:00",
+          "matched": "1 Nov"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "042",
+      "group": "date",
+      "text": "17/10",
+      "date": "2026-10-17",
+      "time": null,
+      "means": "17 October",
+      "note": "Day first, as in all Indonesian dates.",
+      "release": {
+        "id": "042",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "17/10"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "042",
+        "read": {
+          "date": "2026-10-17",
+          "time": "12:00",
+          "matched": "17/10"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "043",
+      "group": "date",
+      "text": "5/11",
+      "date": "2026-11-05",
+      "time": null,
+      "means": "5 November",
+      "note": "Day first: 5 November, not May 11.",
+      "release": {
+        "id": "043",
+        "read": {
+          "date": "2026-11-05",
+          "time": "12:00",
+          "matched": "5/11"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "043",
+        "read": {
+          "date": "2026-11-05",
+          "time": "12:00",
+          "matched": "5/11"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "044",
+      "group": "date",
+      "text": "05/11/2026",
+      "date": "2026-11-05",
+      "time": null,
+      "means": "5 November 2026",
+      "release": {
+        "id": "044",
+        "read": {
+          "date": "2026-11-05",
+          "time": "12:00",
+          "matched": "05/11/2026"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "044",
+        "read": {
+          "date": "2026-11-05",
+          "time": "12:00",
+          "matched": "05/11/2026"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "045",
+      "group": "date",
+      "text": "15-10-2026",
+      "date": "2026-10-15",
+      "time": null,
+      "means": "15 October 2026",
+      "release": {
+        "id": "045",
+        "read": {
+          "date": "2026-10-15",
+          "time": "12:00",
+          "matched": "15-10-2026"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "045",
+        "read": {
+          "date": "2026-10-15",
+          "time": "12:00",
+          "matched": "15-10-2026"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "046",
+      "group": "date",
+      "text": "17 Agustus",
+      "date": "2027-08-17",
+      "time": null,
+      "means": "17 August (the next one)",
+      "release": {
+        "id": "046",
+        "read": {
+          "date": "2027-08-17",
+          "time": "12:00",
+          "matched": "17 Agustus"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "046",
+        "read": {
+          "date": "2027-08-17",
+          "time": "12:00",
+          "matched": "17 Agustus"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "047",
+      "group": "date",
+      "text": "Kamis, 15 Oktober 2026",
+      "date": "2026-10-15",
+      "time": null,
+      "means": "Thursday 15 October 2026",
+      "release": {
+        "id": "047",
+        "read": {
+          "date": "2026-10-15",
+          "time": "12:00",
+          "matched": "Kamis, 15 Oktober 2026"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "047",
+        "read": {
+          "date": "2026-10-15",
+          "time": "12:00",
+          "matched": "Kamis, 15 Oktober 2026"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "048",
+      "group": "date",
+      "text": "tgl 20 bulan depan",
+      "date": "2026-11-20",
+      "time": null,
+      "means": "the 20th of next month",
+      "release": {
+        "id": "048",
+        "read": {
+          "date": "2026-11-14",
+          "time": "20:00",
+          "matched": "20 bulan depan"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "048",
+        "read": {
+          "date": "2026-11-20",
+          "time": "12:00",
+          "matched": "tgl 20 bulan depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "049",
+      "group": "date",
+      "text": "awal bulan depan",
+      "date": {
+        "from": "2026-11-01",
+        "to": "2026-11-07"
+      },
+      "time": null,
+      "means": "early next month",
+      "release": {
+        "id": "049",
+        "read": {
+          "date": "2026-11-14",
+          "time": "10:00",
+          "matched": "bulan depan"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "049",
+        "read": {
+          "date": "2026-11-01",
+          "time": "12:00",
+          "matched": "awal bulan depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "050",
+      "group": "date",
+      "text": "akhir bulan",
+      "date": {
+        "from": "2026-10-25",
+        "to": "2026-10-31"
+      },
+      "time": null,
+      "means": "the end of this month",
+      "release": {
+        "id": "050",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "050",
+        "read": {
+          "date": "2026-10-31",
+          "time": "12:00",
+          "matched": "akhir bulan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "051",
+      "group": "date",
+      "text": "akhir bulan ini",
+      "date": {
+        "from": "2026-10-25",
+        "to": "2026-10-31"
+      },
+      "time": null,
+      "means": "the end of this month",
+      "release": {
+        "id": "051",
+        "read": {
+          "date": "2026-10-01",
+          "time": "12:00",
+          "matched": "bulan ini"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "051",
+        "read": {
+          "date": "2026-10-31",
+          "time": "12:00",
+          "matched": "akhir bulan ini"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "052",
+      "group": "date",
+      "text": "pertengahan bulan depan",
+      "date": {
+        "from": "2026-11-10",
+        "to": "2026-11-20"
+      },
+      "time": null,
+      "means": "the middle of next month",
+      "release": {
+        "id": "052",
+        "read": {
+          "date": "2026-11-14",
+          "time": "10:00",
+          "matched": "bulan depan"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "052",
+        "read": {
+          "date": "2026-11-15",
+          "time": "12:00",
+          "matched": "pertengahan bulan depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "053",
+      "group": "date",
+      "text": "bulan depan",
+      "date": {
+        "from": "2026-11-01",
+        "to": "2026-11-30"
+      },
+      "time": null,
+      "means": "next month",
+      "release": {
+        "id": "053",
+        "read": {
+          "date": "2026-11-14",
+          "time": "10:00",
+          "matched": "bulan depan"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "053",
+        "read": {
+          "date": "2026-11-14",
+          "time": "10:00",
+          "matched": "bulan depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "054",
+      "group": "date",
+      "text": "minggu depan",
+      "date": {
+        "from": "2026-10-19",
+        "to": "2026-10-25"
+      },
+      "time": null,
+      "means": "next week",
+      "note": "Here 'minggu' means week, not Sunday.",
+      "release": {
+        "id": "054",
+        "read": {
+          "date": "2026-10-21",
+          "time": "10:00",
+          "matched": "minggu depan"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "054",
+        "read": {
+          "date": "2026-10-21",
+          "time": "10:00",
+          "matched": "minggu depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "055",
+      "group": "date",
+      "text": "pekan depan",
+      "date": {
+        "from": "2026-10-19",
+        "to": "2026-10-25"
+      },
+      "time": null,
+      "means": "next week",
+      "release": {
+        "id": "055",
+        "read": {
+          "date": "2026-10-21",
+          "time": "10:00",
+          "matched": "pekan depan"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "055",
+        "read": {
+          "date": "2026-10-21",
+          "time": "10:00",
+          "matched": "pekan depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "056",
+      "group": "date",
+      "text": "tahun depan",
+      "date": {
+        "from": "2027-01-01",
+        "to": "2027-12-31"
+      },
+      "time": null,
+      "means": "next year",
+      "release": {
+        "id": "056",
+        "read": {
+          "date": "2027-10-14",
+          "time": "10:00",
+          "matched": "tahun depan"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "056",
+        "read": {
+          "date": "2027-10-14",
+          "time": "10:00",
+          "matched": "tahun depan"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "057",
+      "group": "date",
+      "text": "Januari 2027",
+      "date": {
+        "from": "2027-01-01",
+        "to": "2027-01-31"
+      },
+      "time": null,
+      "means": "January 2027",
+      "release": {
+        "id": "057",
+        "read": {
+          "date": "2027-01-01",
+          "time": "12:00",
+          "matched": "Januari 2027"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "057",
+        "read": {
+          "date": "2027-01-01",
+          "time": "12:00",
+          "matched": "Januari 2027"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "058",
+      "group": "time",
+      "text": "jam 7 malam",
+      "date": "2026-10-14",
+      "time": "19:00",
+      "means": "7 pm today",
+      "release": {
+        "id": "058",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:00",
+          "matched": "jam 7 malam"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "058",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:00",
+          "matched": "jam 7 malam"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "059",
+      "group": "time",
+      "text": "jam 7 malem",
+      "date": "2026-10-14",
+      "time": "19:00",
+      "means": "7 pm today",
+      "note": "malem is the spoken form of malam.",
+      "release": {
+        "id": "059",
+        "read": {
+          "date": "2026-10-15",
+          "time": "07:00",
+          "matched": "jam 7"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "059",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:00",
+          "matched": "jam 7 malem"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "060",
+      "group": "time",
+      "text": "jm 7 mlm",
+      "date": "2026-10-14",
+      "time": "19:00",
+      "means": "7 pm today",
+      "note": "Both words abbreviated, as typed in a hurry.",
+      "release": {
+        "id": "060",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "060",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:00",
+          "matched": "jm 7 mlm"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "061",
+      "group": "time",
+      "text": "jam 3 sore",
+      "date": "2026-10-14",
+      "time": "15:00",
+      "means": "3 pm today",
+      "release": {
+        "id": "061",
+        "read": {
+          "date": "2026-10-14",
+          "time": "15:00",
+          "matched": "jam 3 sore"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "061",
+        "read": {
+          "date": "2026-10-14",
+          "time": "15:00",
+          "matched": "jam 3 sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "062",
+      "group": "time",
+      "text": "jam 1 siang",
+      "date": "2026-10-14",
+      "time": "13:00",
+      "means": "1 pm today",
+      "release": {
+        "id": "062",
+        "read": {
+          "date": "2026-10-14",
+          "time": "13:00",
+          "matched": "jam 1 siang"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "062",
+        "read": {
+          "date": "2026-10-14",
+          "time": "13:00",
+          "matched": "jam 1 siang"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "063",
+      "group": "time",
+      "text": "jam 11 siang",
+      "date": "2026-10-14",
+      "time": "11:00",
+      "means": "11 am today",
+      "release": {
+        "id": "063",
+        "read": {
+          "date": "2026-10-14",
+          "time": "11:00",
+          "matched": "jam 11 siang"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "063",
+        "read": {
+          "date": "2026-10-14",
+          "time": "11:00",
+          "matched": "jam 11 siang"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "064",
+      "group": "time",
+      "text": "jam 12 siang",
+      "date": "2026-10-14",
+      "time": "12:00",
+      "means": "noon today",
+      "release": {
+        "id": "064",
+        "read": {
+          "date": "2026-10-14",
+          "time": "12:00",
+          "matched": "jam 12 siang"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "064",
+        "read": {
+          "date": "2026-10-14",
+          "time": "12:00",
+          "matched": "jam 12 siang"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "065",
+      "group": "time",
+      "text": "jam 12 malam",
+      "date": "2026-10-15",
+      "time": "00:00",
+      "means": "midnight tonight",
+      "release": {
+        "id": "065",
+        "read": {
+          "date": "2026-10-15",
+          "time": "00:00",
+          "matched": "jam 12 malam"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "065",
+        "read": {
+          "date": "2026-10-15",
+          "time": "00:00",
+          "matched": "jam 12 malam"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "066",
+      "group": "time",
+      "text": "pukul 15.00 WIB",
+      "date": "2026-10-14",
+      "time": "15:00",
+      "means": "3 pm today, Western Indonesia time",
+      "release": {
+        "id": "066",
+        "read": {
+          "date": "2026-10-14",
+          "time": "15:00",
+          "matched": "pukul 15.00 WIB"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "066",
+        "read": {
+          "date": "2026-10-14",
+          "time": "15:00",
+          "matched": "pukul 15.00 WIB"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "067",
+      "group": "time",
+      "text": "pkl 14.30",
+      "date": "2026-10-14",
+      "time": "14:30",
+      "means": "2:30 pm today",
+      "release": {
+        "id": "067",
+        "read": {
+          "date": "2026-10-14",
+          "time": "14:30",
+          "matched": "pkl 14.30"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "067",
+        "read": {
+          "date": "2026-10-14",
+          "time": "14:30",
+          "matched": "pkl 14.30"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "068",
+      "group": "time",
+      "text": "jam 19.30",
+      "date": "2026-10-14",
+      "time": "19:30",
+      "means": "7:30 pm today",
+      "note": "Indonesian writes the time with a dot.",
+      "release": {
+        "id": "068",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:30",
+          "matched": "jam 19.30"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "068",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:30",
+          "matched": "jam 19.30"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "069",
+      "group": "time",
+      "text": "jam 19:30",
+      "date": "2026-10-14",
+      "time": "19:30",
+      "means": "7:30 pm today",
+      "release": {
+        "id": "069",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:30",
+          "matched": "jam 19:30"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "069",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:30",
+          "matched": "jam 19:30"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "070",
+      "group": "time",
+      "text": "jam setengah 8 malam",
+      "date": "2026-10-14",
+      "time": "19:30",
+      "means": "7:30 pm today",
+      "note": "'Setengah delapan' is half past seven, as in Dutch and German: not 8:30.",
+      "release": {
+        "id": "070",
+        "read": {
+          "date": "2026-10-14",
+          "time": "20:00",
+          "matched": "8 malam"
+        },
+        "outcome": "wrong time"
+      },
+      "fixed": {
+        "id": "070",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:30",
+          "matched": "jam setengah 8 malam"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "071",
+      "group": "time",
+      "text": "jam setengah 3 sore",
+      "date": "2026-10-14",
+      "time": "14:30",
+      "means": "2:30 pm today",
+      "note": "Half past two, not three thirty.",
+      "release": {
+        "id": "071",
+        "read": {
+          "date": "2026-10-14",
+          "time": "15:00",
+          "matched": "3 sore"
+        },
+        "outcome": "wrong time"
+      },
+      "fixed": {
+        "id": "071",
+        "read": {
+          "date": "2026-10-14",
+          "time": "14:30",
+          "matched": "jam setengah 3 sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "072",
+      "group": "time",
+      "text": "jam 8 kurang 15 malam",
+      "date": "2026-10-14",
+      "time": "19:45",
+      "means": "7:45 pm today",
+      "note": "'8 kurang 15' is fifteen to eight.",
+      "release": {
+        "id": "072",
+        "read": {
+          "date": "2026-10-15",
+          "time": "08:00",
+          "matched": "jam 8"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "072",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:45",
+          "matched": "jam 8 kurang 15 malam"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "073",
+      "group": "time",
+      "text": "jam 8 kurang seperempat malam",
+      "date": "2026-10-14",
+      "time": "19:45",
+      "means": "7:45 pm today",
+      "note": "A quarter to eight.",
+      "release": {
+        "id": "073",
+        "read": {
+          "date": "2026-10-15",
+          "time": "08:00",
+          "matched": "jam 8"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "073",
+        "read": {
+          "date": "2026-10-14",
+          "time": "19:45",
+          "matched": "jam 8 kurang seperempat malam"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "074",
+      "group": "time",
+      "text": "jam 4 lewat 15 sore",
+      "date": "2026-10-14",
+      "time": "16:15",
+      "means": "4:15 pm today",
+      "release": {
+        "id": "074",
+        "read": {
+          "date": "2026-10-15",
+          "time": "04:00",
+          "matched": "jam 4"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "074",
+        "read": {
+          "date": "2026-10-14",
+          "time": "16:15",
+          "matched": "jam 4 lewat 15 sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "075",
+      "group": "time",
+      "text": "jam 4 lewat seperempat sore",
+      "date": "2026-10-14",
+      "time": "16:15",
+      "means": "4:15 pm today",
+      "note": "A quarter past four.",
+      "release": {
+        "id": "075",
+        "read": {
+          "date": "2026-10-15",
+          "time": "04:00",
+          "matched": "jam 4"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "075",
+        "read": {
+          "date": "2026-10-14",
+          "time": "16:15",
+          "matched": "jam 4 lewat seperempat sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "076",
+      "group": "time",
+      "text": "jam 7 pagi",
+      "date": "2026-10-15",
+      "time": "07:00",
+      "means": "7 am tomorrow",
+      "note": "It is 10 am, so the next 7 am is tomorrow.",
+      "release": {
+        "id": "076",
+        "read": {
+          "date": "2026-10-15",
+          "time": "07:00",
+          "matched": "jam 7 pagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "076",
+        "read": {
+          "date": "2026-10-15",
+          "time": "07:00",
+          "matched": "jam 7 pagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "077",
+      "group": "time",
+      "text": "jam 2",
+      "date": "2026-10-14",
+      "time": "14:00",
+      "means": "2 pm today",
+      "note": "In a chat at 10 am, 'jam 2' means 2 pm; 2 am is not what anyone means.",
+      "release": {
+        "id": "077",
+        "read": {
+          "date": "2026-10-15",
+          "time": "02:00",
+          "matched": "jam 2"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "077",
+        "read": {
+          "date": "2026-10-15",
+          "time": "02:00",
+          "matched": "jam 2"
+        },
+        "outcome": "wrong date"
+      }
+    },
+    {
+      "id": "078",
+      "group": "time",
+      "text": "habis maghrib",
+      "date": "2026-10-14",
+      "time": {
+        "from": "18:00",
+        "to": "19:30"
+      },
+      "means": "just after sunset prayer, about 6 pm",
+      "note": "A time of day by the prayer schedule, very common.",
+      "release": {
+        "id": "078",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "078",
+        "read": null,
+        "outcome": "missed"
+      }
+    },
+    {
+      "id": "079",
+      "group": "time",
+      "text": "subuh",
+      "date": "2026-10-15",
+      "time": {
+        "from": "04:00",
+        "to": "06:00"
+      },
+      "means": "dawn (tomorrow)",
+      "note": "The dawn prayer time, around 4:30 am.",
+      "release": {
+        "id": "079",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "079",
+        "read": null,
+        "outcome": "missed"
+      }
+    },
+    {
+      "id": "080",
+      "group": "date and time",
+      "text": "besok jam 10",
+      "date": "2026-10-15",
+      "time": "10:00",
+      "means": "tomorrow at 10",
+      "release": {
+        "id": "080",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "besok jam 10"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "080",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "besok jam 10"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "081",
+      "group": "date and time",
+      "text": "bsk jam 10",
+      "date": "2026-10-15",
+      "time": "10:00",
+      "means": "tomorrow at 10",
+      "release": {
+        "id": "081",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:00",
+          "matched": "jam 10"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "081",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "bsk jam 10"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "082",
+      "group": "date and time",
+      "text": "besok jam 9an",
+      "date": "2026-10-15",
+      "time": "09:00",
+      "means": "tomorrow around 9",
+      "note": "'9an' is 'around nine'. (Not 10: 'besok' alone already implies the reference time, 10:00.)",
+      "release": {
+        "id": "082",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "besok"
+        },
+        "outcome": "wrong time"
+      },
+      "fixed": {
+        "id": "082",
+        "read": {
+          "date": "2026-10-15",
+          "time": "09:00",
+          "matched": "besok jam 9an"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "083",
+      "group": "date and time",
+      "text": "lusa jam 2 siang",
+      "date": "2026-10-16",
+      "time": "14:00",
+      "means": "the day after tomorrow at 2 pm",
+      "release": {
+        "id": "083",
+        "read": {
+          "date": "2026-10-16",
+          "time": "14:00",
+          "matched": "lusa jam 2 siang"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "083",
+        "read": {
+          "date": "2026-10-16",
+          "time": "14:00",
+          "matched": "lusa jam 2 siang"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "084",
+      "group": "date and time",
+      "text": "Sabtu jam 10",
+      "date": "2026-10-17",
+      "time": "10:00",
+      "means": "Saturday at 10",
+      "release": {
+        "id": "084",
+        "read": {
+          "date": "2026-10-17",
+          "time": "10:00",
+          "matched": "Sabtu jam 10"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "084",
+        "read": {
+          "date": "2026-10-17",
+          "time": "10:00",
+          "matched": "Sabtu jam 10"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "085",
+      "group": "date and time",
+      "text": "Senin depan jam 9 pagi",
+      "date": "2026-10-19",
+      "time": "09:00",
+      "means": "next Monday at 9 am",
+      "release": {
+        "id": "085",
+        "read": {
+          "date": "2026-10-19",
+          "time": "09:00",
+          "matched": "Senin depan jam 9 pagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "085",
+        "read": {
+          "date": "2026-10-19",
+          "time": "09:00",
+          "matched": "Senin depan jam 9 pagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "086",
+      "group": "date and time",
+      "text": "tgl 20 jam 2 siang",
+      "date": "2026-10-20",
+      "time": "14:00",
+      "means": "the 20th at 2 pm",
+      "release": {
+        "id": "086",
+        "read": {
+          "date": "2026-10-14",
+          "time": "14:00",
+          "matched": "jam 2 siang"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "086",
+        "read": {
+          "date": "2026-10-20",
+          "time": "14:00",
+          "matched": "tgl 20 jam 2 siang"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "087",
+      "group": "date and time",
+      "text": "25 Okt jam 13.00",
+      "date": "2026-10-25",
+      "time": "13:00",
+      "means": "25 October at 1 pm",
+      "release": {
+        "id": "087",
+        "read": {
+          "date": "2026-10-25",
+          "time": "13:00",
+          "matched": "25 Okt jam 13.00"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "087",
+        "read": {
+          "date": "2026-10-25",
+          "time": "13:00",
+          "matched": "25 Okt jam 13.00"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "088",
+      "group": "date and time",
+      "text": "Kamis, 15 Oktober 2026 pukul 09.00 WIB",
+      "date": "2026-10-15",
+      "time": "09:00",
+      "means": "Thursday 15 October 2026 at 9 am WIB",
+      "release": {
+        "id": "088",
+        "read": {
+          "date": "2026-10-15",
+          "time": "09:00",
+          "matched": "Kamis, 15 Oktober 2026 pukul 09.00 WIB"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "088",
+        "read": {
+          "date": "2026-10-15",
+          "time": "09:00",
+          "matched": "Kamis, 15 Oktober 2026 pukul 09.00 WIB"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "089",
+      "group": "date and time",
+      "text": "besok pukul 09.00 WITA",
+      "date": "2026-10-15",
+      "time": "08:00",
+      "means": "tomorrow at 9 am Central Indonesia time, 8 am in Jakarta",
+      "note": "WITA is UTC+8; the reference clock is Jakarta (WIB, UTC+7).",
+      "release": {
+        "id": "089",
+        "read": {
+          "date": "2026-10-15",
+          "time": "08:00",
+          "matched": "besok pukul 09.00 WITA"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "089",
+        "read": {
+          "date": "2026-10-15",
+          "time": "08:00",
+          "matched": "besok pukul 09.00 WITA"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "090",
+      "group": "date and time",
+      "text": "besok jam 9 WIT",
+      "date": "2026-10-15",
+      "time": "07:00",
+      "means": "tomorrow at 9 am Eastern Indonesia time, 7 am in Jakarta",
+      "note": "WIT is UTC+9.",
+      "release": {
+        "id": "090",
+        "read": {
+          "date": "2026-10-15",
+          "time": "07:00",
+          "matched": "besok jam 9 WIT"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "090",
+        "read": {
+          "date": "2026-10-15",
+          "time": "07:00",
+          "matched": "besok jam 9 WIT"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "091",
+      "group": "date and time",
+      "text": "besok jam setengah 10",
+      "date": "2026-10-15",
+      "time": "09:30",
+      "means": "tomorrow at half past nine",
+      "release": {
+        "id": "091",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "besok"
+        },
+        "outcome": "wrong time"
+      },
+      "fixed": {
+        "id": "091",
+        "read": {
+          "date": "2026-10-15",
+          "time": "09:30",
+          "matched": "besok jam setengah 10"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "092",
+      "group": "date and time",
+      "text": "Jumat sore jam 4",
+      "date": "2026-10-16",
+      "time": "16:00",
+      "means": "Friday at 4 pm",
+      "release": {
+        "id": "092",
+        "read": {
+          "date": "2026-10-16",
+          "time": "16:00",
+          "matched": "Jumat sore jam 4"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "092",
+        "read": {
+          "date": "2026-10-16",
+          "time": "16:00",
+          "matched": "Jumat sore jam 4"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "093",
+      "group": "date and time",
+      "text": "malam Minggu jam 8",
+      "date": "2026-10-17",
+      "time": "20:00",
+      "means": "Saturday at 8 pm",
+      "release": {
+        "id": "093",
+        "read": {
+          "date": "2026-10-14",
+          "time": "20:00",
+          "matched": "malam"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "093",
+        "read": {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "matched": "malam Minggu jam 8"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "094",
+      "group": "date and time",
+      "text": "17/10 jam 19.00",
+      "date": "2026-10-17",
+      "time": "19:00",
+      "means": "17 October at 7 pm",
+      "release": {
+        "id": "094",
+        "read": {
+          "date": "2026-10-17",
+          "time": "19:00",
+          "matched": "17/10 jam 19.00"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "094",
+        "read": {
+          "date": "2026-10-17",
+          "time": "19:00",
+          "matched": "17/10 jam 19.00"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "095",
+      "group": "duration",
+      "text": "2 hari lagi",
+      "date": "2026-10-16",
+      "time": null,
+      "means": "in 2 days",
+      "release": {
+        "id": "095",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "2 hari lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "095",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "2 hari lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "096",
+      "group": "duration",
+      "text": "dua hari lagi",
+      "date": "2026-10-16",
+      "time": null,
+      "means": "in two days",
+      "release": {
+        "id": "096",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "dua hari lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "096",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "dua hari lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "097",
+      "group": "duration",
+      "text": "seminggu lagi",
+      "date": "2026-10-21",
+      "time": null,
+      "means": "in a week",
+      "release": {
+        "id": "097",
+        "read": {
+          "date": "2026-10-21",
+          "time": "10:00",
+          "matched": "seminggu lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "097",
+        "read": {
+          "date": "2026-10-21",
+          "time": "10:00",
+          "matched": "seminggu lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "098",
+      "group": "duration",
+      "text": "2 minggu lagi",
+      "date": "2026-10-28",
+      "time": null,
+      "means": "in 2 weeks",
+      "release": {
+        "id": "098",
+        "read": {
+          "date": "2026-10-28",
+          "time": "10:00",
+          "matched": "2 minggu lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "098",
+        "read": {
+          "date": "2026-10-28",
+          "time": "10:00",
+          "matched": "2 minggu lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "099",
+      "group": "duration",
+      "text": "sebulan lagi",
+      "date": "2026-11-14",
+      "time": null,
+      "means": "in a month",
+      "release": {
+        "id": "099",
+        "read": {
+          "date": "2026-11-14",
+          "time": "10:00",
+          "matched": "sebulan lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "099",
+        "read": {
+          "date": "2026-11-14",
+          "time": "10:00",
+          "matched": "sebulan lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "100",
+      "group": "duration",
+      "text": "3 hari yang lalu",
+      "date": "2026-10-11",
+      "time": null,
+      "means": "3 days ago",
+      "release": {
+        "id": "100",
+        "read": {
+          "date": "2026-10-11",
+          "time": "10:00",
+          "matched": "3 hari yang lalu"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "100",
+        "read": {
+          "date": "2026-10-11",
+          "time": "10:00",
+          "matched": "3 hari yang lalu"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "101",
+      "group": "duration",
+      "text": "seminggu yg lalu",
+      "date": "2026-10-07",
+      "time": null,
+      "means": "a week ago",
+      "note": "yg is the chat abbreviation of yang.",
+      "release": {
+        "id": "101",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "101",
+        "read": {
+          "date": "2026-10-07",
+          "time": "10:00",
+          "matched": "seminggu yg lalu"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "102",
+      "group": "duration",
+      "text": "1 jam lagi",
+      "date": "2026-10-14",
+      "time": "11:00",
+      "means": "in an hour",
+      "release": {
+        "id": "102",
+        "read": {
+          "date": "2026-10-14",
+          "time": "11:00",
+          "matched": "1 jam lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "102",
+        "read": {
+          "date": "2026-10-14",
+          "time": "11:00",
+          "matched": "1 jam lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "103",
+      "group": "duration",
+      "text": "setengah jam lagi",
+      "date": "2026-10-14",
+      "time": "10:30",
+      "means": "in half an hour",
+      "release": {
+        "id": "103",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:30",
+          "matched": "setengah jam lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "103",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:30",
+          "matched": "setengah jam lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "104",
+      "group": "duration",
+      "text": "15 menit lagi",
+      "date": "2026-10-14",
+      "time": "10:15",
+      "means": "in 15 minutes",
+      "release": {
+        "id": "104",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:15",
+          "matched": "15 menit lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "104",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:15",
+          "matched": "15 menit lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "105",
+      "group": "duration",
+      "text": "dlm 2 hari",
+      "date": "2026-10-16",
+      "time": null,
+      "means": "within 2 days",
+      "note": "dlm is the chat abbreviation of dalam.",
+      "release": {
+        "id": "105",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "105",
+        "read": {
+          "date": "2026-10-16",
+          "time": "10:00",
+          "matched": "dlm 2 hari"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "106",
+      "group": "in a message",
+      "text": "Kak, bisa survey bsk jam 10?",
+      "date": "2026-10-15",
+      "time": "10:00",
+      "means": "tomorrow at 10",
+      "release": {
+        "id": "106",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:00",
+          "matched": "jam 10"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "106",
+        "read": {
+          "date": "2026-10-15",
+          "time": "10:00",
+          "matched": "bsk jam 10"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "107",
+      "group": "in a message",
+      "text": "Oke, ketemu di kantor Senin depan jam 9 ya",
+      "date": "2026-10-19",
+      "time": "09:00",
+      "means": "next Monday at 9",
+      "release": {
+        "id": "107",
+        "read": {
+          "date": "2026-10-19",
+          "time": "09:00",
+          "matched": "Senin depan jam 9"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "107",
+        "read": {
+          "date": "2026-10-19",
+          "time": "09:00",
+          "matched": "Senin depan jam 9"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "108",
+      "group": "in a message",
+      "text": "Pembayaran paling lambat tgl 20 ya kak",
+      "date": "2026-10-20",
+      "time": null,
+      "means": "by the 20th",
+      "release": {
+        "id": "108",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "108",
+        "read": {
+          "date": "2026-10-20",
+          "time": "12:00",
+          "matched": "tgl 20"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "109",
+      "group": "in a message",
+      "text": "Saya baru bisa lihat unitnya Sabtu sore",
+      "date": "2026-10-17",
+      "time": {
+        "from": "15:00",
+        "to": "18:00"
+      },
+      "means": "Saturday afternoon",
+      "release": {
+        "id": "109",
+        "read": {
+          "date": "2026-10-17",
+          "time": "15:00",
+          "matched": "Sabtu sore"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "109",
+        "read": {
+          "date": "2026-10-17",
+          "time": "15:00",
+          "matched": "Sabtu sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "110",
+      "group": "in a message",
+      "text": "Kalau lusa jam 3 sore gimana?",
+      "date": "2026-10-16",
+      "time": "15:00",
+      "means": "the day after tomorrow at 3 pm",
+      "release": {
+        "id": "110",
+        "read": {
+          "date": "2026-10-16",
+          "time": "15:00",
+          "matched": "lusa jam 3 sore"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "110",
+        "read": {
+          "date": "2026-10-16",
+          "time": "15:00",
+          "matched": "lusa jam 3 sore"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "111",
+      "group": "in a message",
+      "text": "Meetingnya dimajuin jadi jam 2 siang",
+      "date": "2026-10-14",
+      "time": "14:00",
+      "means": "today at 2 pm",
+      "release": {
+        "id": "111",
+        "read": {
+          "date": "2026-10-14",
+          "time": "14:00",
+          "matched": "jam 2 siang"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "111",
+        "read": {
+          "date": "2026-10-14",
+          "time": "14:00",
+          "matched": "jam 2 siang"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "112",
+      "group": "in a message",
+      "text": "Deadline akhir bulan ini ya",
+      "date": {
+        "from": "2026-10-25",
+        "to": "2026-10-31"
+      },
+      "time": null,
+      "means": "end of this month",
+      "release": {
+        "id": "112",
+        "read": {
+          "date": "2026-10-01",
+          "time": "12:00",
+          "matched": "bulan ini"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "112",
+        "read": {
+          "date": "2026-10-31",
+          "time": "12:00",
+          "matched": "akhir bulan ini"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "113",
+      "group": "in a message",
+      "text": "Barang dikirim besok pagi, sampai lusa",
+      "date": "2026-10-15",
+      "time": {
+        "from": "05:00",
+        "to": "11:00"
+      },
+      "means": "tomorrow morning (the first date)",
+      "release": {
+        "id": "113",
+        "read": {
+          "date": "2026-10-15",
+          "time": "06:00",
+          "matched": "besok pagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "113",
+        "read": {
+          "date": "2026-10-15",
+          "time": "06:00",
+          "matched": "besok pagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "114",
+      "group": "in a message",
+      "text": "Maaf baru bales, td malam ketiduran",
+      "date": "2026-10-13",
+      "time": {
+        "from": "18:00",
+        "to": "23:59"
+      },
+      "means": "last night",
+      "note": "td is the chat abbreviation of tadi.",
+      "release": {
+        "id": "114",
+        "read": {
+          "date": "2026-10-14",
+          "time": "20:00",
+          "matched": "malam"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "114",
+        "read": {
+          "date": "2026-10-14",
+          "time": "00:00",
+          "matched": "td malam"
+        },
+        "outcome": "wrong date"
+      }
+    },
+    {
+      "id": "115",
+      "group": "in a message",
+      "text": "Bisa telp jam 4an?",
+      "date": "2026-10-14",
+      "time": "16:00",
+      "means": "around 4 pm today",
+      "release": {
+        "id": "115",
+        "read": null,
+        "outcome": "missed"
+      },
+      "fixed": {
+        "id": "115",
+        "read": {
+          "date": "2026-10-15",
+          "time": "04:00",
+          "matched": "jam 4an"
+        },
+        "outcome": "wrong date"
+      }
+    },
+    {
+      "id": "116",
+      "group": "in a message",
+      "text": "Saya free malam minggu, gimana?",
+      "date": "2026-10-17",
+      "time": {
+        "from": "18:00",
+        "to": "23:59"
+      },
+      "means": "Saturday night",
+      "note": "Typed in lower case, as most chat is.",
+      "release": {
+        "id": "116",
+        "read": {
+          "date": "2026-10-14",
+          "time": "20:00",
+          "matched": "malam"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "116",
+        "read": {
+          "date": "2026-10-17",
+          "time": "20:00",
+          "matched": "malam minggu"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "117",
+      "group": "in a message",
+      "text": "Jadwal cicilan pertama 5/11",
+      "date": "2026-11-05",
+      "time": null,
+      "means": "5 November",
+      "release": {
+        "id": "117",
+        "read": {
+          "date": "2026-11-05",
+          "time": "12:00",
+          "matched": "5/11"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "117",
+        "read": {
+          "date": "2026-11-05",
+          "time": "12:00",
+          "matched": "5/11"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "118",
+      "group": "in a message",
+      "text": "Acara 17 Agustus kemarin seru banget",
+      "date": "2026-08-17",
+      "time": null,
+      "means": "the 17 August that just passed",
+      "note": "'kemarin' here means the recent one: the date is in the past.",
+      "release": {
+        "id": "118",
+        "read": {
+          "date": "2027-08-17",
+          "time": "12:00",
+          "matched": "17 Agustus"
+        },
+        "outcome": "wrong date"
+      },
+      "fixed": {
+        "id": "118",
+        "read": {
+          "date": "2027-08-17",
+          "time": "12:00",
+          "matched": "17 Agustus"
+        },
+        "outcome": "wrong date"
+      }
+    },
+    {
+      "id": "119",
+      "group": "in a message",
+      "text": "Undangan: Kamis, 15 Oktober 2026 pukul 19.00 WIB",
+      "date": "2026-10-15",
+      "time": "19:00",
+      "means": "Thursday 15 October 2026 at 7 pm",
+      "release": {
+        "id": "119",
+        "read": {
+          "date": "2026-10-15",
+          "time": "19:00",
+          "matched": "Kamis, 15 Oktober 2026 pukul 19.00 WIB"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "119",
+        "read": {
+          "date": "2026-10-15",
+          "time": "19:00",
+          "matched": "Kamis, 15 Oktober 2026 pukul 19.00 WIB"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "120",
+      "group": "in a message",
+      "text": "Tolong konfirmasi sebelum jam 12 siang",
+      "date": "2026-10-14",
+      "time": "12:00",
+      "means": "before noon today",
+      "release": {
+        "id": "120",
+        "read": {
+          "date": "2026-10-14",
+          "time": "12:00",
+          "matched": "jam 12 siang"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "120",
+        "read": {
+          "date": "2026-10-14",
+          "time": "12:00",
+          "matched": "jam 12 siang"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "121",
+      "group": "in a message",
+      "text": "Check-in tgl 24 Okt, check-out 26 Okt",
+      "date": "2026-10-24",
+      "time": null,
+      "means": "24 October (the first date)",
+      "release": {
+        "id": "121",
+        "read": {
+          "date": "2026-10-24",
+          "time": "12:00",
+          "matched": "tgl 24 Okt"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "121",
+        "read": {
+          "date": "2026-10-24",
+          "time": "12:00",
+          "matched": "tgl 24 Okt"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "122",
+      "group": "in a message",
+      "text": "Lagi di jalan, 15 menit lagi sampai",
+      "date": "2026-10-14",
+      "time": "10:15",
+      "means": "in 15 minutes",
+      "release": {
+        "id": "122",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:15",
+          "matched": "15 menit lagi"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "122",
+        "read": {
+          "date": "2026-10-14",
+          "time": "10:15",
+          "matched": "15 menit lagi"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "123",
+      "group": "in a message",
+      "text": "Rapat tiap Senin jam 8",
+      "date": "2026-10-19",
+      "time": "08:00",
+      "means": "every Monday at 8, next on 19 October",
+      "release": {
+        "id": "123",
+        "read": {
+          "date": "2026-10-19",
+          "time": "08:00",
+          "matched": "Senin jam 8"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "123",
+        "read": {
+          "date": "2026-10-19",
+          "time": "08:00",
+          "matched": "Senin jam 8"
+        },
+        "outcome": "right"
+      }
+    },
+    {
+      "id": "124",
+      "group": "in a message",
+      "text": "Toko tutup tanggal 1 sampai 3 November",
+      "date": "2026-11-01",
+      "time": null,
+      "means": "from 1 November",
+      "release": {
+        "id": "124",
+        "read": {
+          "date": "2026-11-01",
+          "time": "12:00",
+          "matched": "tanggal 1 sampai 3 November"
+        },
+        "outcome": "right"
+      },
+      "fixed": {
+        "id": "124",
+        "read": {
+          "date": "2026-11-01",
+          "time": "12:00",
+          "matched": "tanggal 1 sampai 3 November"
+        },
+        "outcome": "right"
+      }
+    }
+  ]
+}

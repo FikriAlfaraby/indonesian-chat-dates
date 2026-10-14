@@ -1,0 +1,1055 @@
+{
+  "parser": "feat/id-earlier-today",
+  "runtime": "node v25.7.0",
+  "reference": "2026-10-14T10:00:00+07:00",
+  "readings": [
+    {
+      "id": "001",
+      "read": {
+        "date": "2026-10-15",
+        "time": "10:00",
+        "matched": "besok"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "002",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "003",
+      "read": {
+        "date": "2026-10-16",
+        "time": "10:00",
+        "matched": "lusa"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "004",
+      "read": {
+        "date": "2026-10-16",
+        "time": "10:00",
+        "matched": "besok lusa"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "005",
+      "read": {
+        "date": "2026-10-13",
+        "time": "10:00",
+        "matched": "kemarin"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "006",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "007",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "008",
+      "read": {
+        "date": "2026-10-14",
+        "time": "10:00",
+        "matched": "hari ini"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "009",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "010",
+      "read": {
+        "date": "2026-10-14",
+        "time": "15:00",
+        "matched": "sore"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "011",
+      "read": {
+        "date": "2026-10-14",
+        "time": "22:00",
+        "matched": "nanti malam"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "012",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "013",
+      "read": {
+        "date": "2026-10-14",
+        "time": "06:00",
+        "matched": "tadi pagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "014",
+      "read": {
+        "date": "2026-10-14",
+        "time": "00:00",
+        "matched": "tadi malam"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "015",
+      "read": {
+        "date": "2026-10-15",
+        "time": "06:00",
+        "matched": "besok pagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "016",
+      "read": {
+        "date": "2026-10-15",
+        "time": "20:00",
+        "matched": "besok malam"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "017",
+      "read": {
+        "date": "2026-10-14",
+        "time": "15:00",
+        "matched": "sore"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "018",
+      "read": {
+        "date": "2026-10-19",
+        "time": "12:00",
+        "matched": "Senin"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "019",
+      "read": {
+        "date": "2026-10-19",
+        "time": "12:00",
+        "matched": "Senin depan"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "020",
+      "read": {
+        "date": "2026-10-15",
+        "time": "10:00",
+        "matched": "Senin besok"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "021",
+      "read": {
+        "date": "2026-10-18",
+        "time": "12:00",
+        "matched": "hari Minggu"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "022",
+      "read": {
+        "date": "2026-10-18",
+        "time": "12:00",
+        "matched": "Ahad"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "023",
+      "read": {
+        "date": "2026-10-17",
+        "time": "12:00",
+        "matched": "Sabtu ini"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "024",
+      "read": {
+        "date": "2026-10-16",
+        "time": "12:00",
+        "matched": "Jumat"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "025",
+      "read": {
+        "date": "2026-10-16",
+        "time": "12:00",
+        "matched": "Jum'at"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "026",
+      "read": {
+        "date": "2026-10-23",
+        "time": "12:00",
+        "matched": "Jumat depan"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "027",
+      "read": {
+        "date": "2026-10-21",
+        "time": "12:00",
+        "matched": "Rabu depan"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "028",
+      "read": {
+        "date": "2026-10-15",
+        "time": "12:00",
+        "matched": "Kamis kemarin"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "029",
+      "read": {
+        "date": "2026-10-20",
+        "time": "12:00",
+        "matched": "Selasa lalu"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "030",
+      "read": {
+        "date": "2026-10-14",
+        "time": "20:00",
+        "matched": "malam"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "031",
+      "read": {
+        "date": "2026-10-14",
+        "time": "12:00",
+        "matched": "malam Jumat"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "032",
+      "read": {
+        "date": "2026-10-15",
+        "time": "12:00",
+        "matched": "pekan ini"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "033",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "034",
+      "read": {
+        "date": "2026-10-19",
+        "time": "06:00",
+        "matched": "Senin pagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "035",
+      "read": {
+        "date": "2026-10-15",
+        "time": "15:00",
+        "matched": "Kamis sore"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "036",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "037",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "038",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "039",
+      "read": {
+        "date": "2026-10-17",
+        "time": "12:00",
+        "matched": "17 Okt"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "040",
+      "read": {
+        "date": "2026-10-25",
+        "time": "12:00",
+        "matched": "25 Oktober"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "041",
+      "read": {
+        "date": "2026-11-01",
+        "time": "12:00",
+        "matched": "1 Nov"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "042",
+      "read": {
+        "date": "2026-10-17",
+        "time": "12:00",
+        "matched": "17/10"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "043",
+      "read": {
+        "date": "2026-11-05",
+        "time": "12:00",
+        "matched": "5/11"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "044",
+      "read": {
+        "date": "2026-11-05",
+        "time": "12:00",
+        "matched": "05/11/2026"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "045",
+      "read": {
+        "date": "2026-10-15",
+        "time": "12:00",
+        "matched": "15-10-2026"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "046",
+      "read": {
+        "date": "2027-08-17",
+        "time": "12:00",
+        "matched": "17 Agustus"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "047",
+      "read": {
+        "date": "2026-10-15",
+        "time": "12:00",
+        "matched": "Kamis, 15 Oktober 2026"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "048",
+      "read": {
+        "date": "2026-11-14",
+        "time": "20:00",
+        "matched": "20 bulan depan"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "049",
+      "read": {
+        "date": "2026-11-14",
+        "time": "10:00",
+        "matched": "bulan depan"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "050",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "051",
+      "read": {
+        "date": "2026-10-01",
+        "time": "12:00",
+        "matched": "bulan ini"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "052",
+      "read": {
+        "date": "2026-11-14",
+        "time": "10:00",
+        "matched": "bulan depan"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "053",
+      "read": {
+        "date": "2026-11-14",
+        "time": "10:00",
+        "matched": "bulan depan"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "054",
+      "read": {
+        "date": "2026-10-21",
+        "time": "10:00",
+        "matched": "minggu depan"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "055",
+      "read": {
+        "date": "2026-10-21",
+        "time": "10:00",
+        "matched": "pekan depan"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "056",
+      "read": {
+        "date": "2027-10-14",
+        "time": "10:00",
+        "matched": "tahun depan"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "057",
+      "read": {
+        "date": "2027-01-01",
+        "time": "12:00",
+        "matched": "Januari 2027"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "058",
+      "read": {
+        "date": "2026-10-14",
+        "time": "19:00",
+        "matched": "jam 7 malam"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "059",
+      "read": {
+        "date": "2026-10-15",
+        "time": "07:00",
+        "matched": "jam 7"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "060",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "061",
+      "read": {
+        "date": "2026-10-14",
+        "time": "15:00",
+        "matched": "jam 3 sore"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "062",
+      "read": {
+        "date": "2026-10-14",
+        "time": "13:00",
+        "matched": "jam 1 siang"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "063",
+      "read": {
+        "date": "2026-10-14",
+        "time": "11:00",
+        "matched": "jam 11 siang"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "064",
+      "read": {
+        "date": "2026-10-14",
+        "time": "12:00",
+        "matched": "jam 12 siang"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "065",
+      "read": {
+        "date": "2026-10-15",
+        "time": "00:00",
+        "matched": "jam 12 malam"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "066",
+      "read": {
+        "date": "2026-10-14",
+        "time": "15:00",
+        "matched": "pukul 15.00 WIB"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "067",
+      "read": {
+        "date": "2026-10-14",
+        "time": "14:30",
+        "matched": "pkl 14.30"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "068",
+      "read": {
+        "date": "2026-10-14",
+        "time": "19:30",
+        "matched": "jam 19.30"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "069",
+      "read": {
+        "date": "2026-10-14",
+        "time": "19:30",
+        "matched": "jam 19:30"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "070",
+      "read": {
+        "date": "2026-10-14",
+        "time": "20:00",
+        "matched": "8 malam"
+      },
+      "outcome": "wrong time"
+    },
+    {
+      "id": "071",
+      "read": {
+        "date": "2026-10-14",
+        "time": "15:00",
+        "matched": "3 sore"
+      },
+      "outcome": "wrong time"
+    },
+    {
+      "id": "072",
+      "read": {
+        "date": "2026-10-15",
+        "time": "08:00",
+        "matched": "jam 8"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "073",
+      "read": {
+        "date": "2026-10-15",
+        "time": "08:00",
+        "matched": "jam 8"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "074",
+      "read": {
+        "date": "2026-10-15",
+        "time": "04:00",
+        "matched": "jam 4"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "075",
+      "read": {
+        "date": "2026-10-15",
+        "time": "04:00",
+        "matched": "jam 4"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "076",
+      "read": {
+        "date": "2026-10-15",
+        "time": "07:00",
+        "matched": "jam 7 pagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "077",
+      "read": {
+        "date": "2026-10-15",
+        "time": "02:00",
+        "matched": "jam 2"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "078",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "079",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "080",
+      "read": {
+        "date": "2026-10-15",
+        "time": "10:00",
+        "matched": "besok jam 10"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "081",
+      "read": {
+        "date": "2026-10-14",
+        "time": "10:00",
+        "matched": "jam 10"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "082",
+      "read": {
+        "date": "2026-10-15",
+        "time": "10:00",
+        "matched": "besok"
+      },
+      "outcome": "wrong time"
+    },
+    {
+      "id": "083",
+      "read": {
+        "date": "2026-10-16",
+        "time": "14:00",
+        "matched": "lusa jam 2 siang"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "084",
+      "read": {
+        "date": "2026-10-17",
+        "time": "10:00",
+        "matched": "Sabtu jam 10"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "085",
+      "read": {
+        "date": "2026-10-19",
+        "time": "09:00",
+        "matched": "Senin depan jam 9 pagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "086",
+      "read": {
+        "date": "2026-10-14",
+        "time": "14:00",
+        "matched": "jam 2 siang"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "087",
+      "read": {
+        "date": "2026-10-25",
+        "time": "13:00",
+        "matched": "25 Okt jam 13.00"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "088",
+      "read": {
+        "date": "2026-10-15",
+        "time": "09:00",
+        "matched": "Kamis, 15 Oktober 2026 pukul 09.00 WIB"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "089",
+      "read": {
+        "date": "2026-10-15",
+        "time": "08:00",
+        "matched": "besok pukul 09.00 WITA"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "090",
+      "read": {
+        "date": "2026-10-15",
+        "time": "07:00",
+        "matched": "besok jam 9 WIT"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "091",
+      "read": {
+        "date": "2026-10-15",
+        "time": "10:00",
+        "matched": "besok"
+      },
+      "outcome": "wrong time"
+    },
+    {
+      "id": "092",
+      "read": {
+        "date": "2026-10-16",
+        "time": "16:00",
+        "matched": "Jumat sore jam 4"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "093",
+      "read": {
+        "date": "2026-10-14",
+        "time": "20:00",
+        "matched": "malam"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "094",
+      "read": {
+        "date": "2026-10-17",
+        "time": "19:00",
+        "matched": "17/10 jam 19.00"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "095",
+      "read": {
+        "date": "2026-10-16",
+        "time": "10:00",
+        "matched": "2 hari lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "096",
+      "read": {
+        "date": "2026-10-16",
+        "time": "10:00",
+        "matched": "dua hari lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "097",
+      "read": {
+        "date": "2026-10-21",
+        "time": "10:00",
+        "matched": "seminggu lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "098",
+      "read": {
+        "date": "2026-10-28",
+        "time": "10:00",
+        "matched": "2 minggu lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "099",
+      "read": {
+        "date": "2026-11-14",
+        "time": "10:00",
+        "matched": "sebulan lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "100",
+      "read": {
+        "date": "2026-10-11",
+        "time": "10:00",
+        "matched": "3 hari yang lalu"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "101",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "102",
+      "read": {
+        "date": "2026-10-14",
+        "time": "11:00",
+        "matched": "1 jam lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "103",
+      "read": {
+        "date": "2026-10-14",
+        "time": "10:30",
+        "matched": "setengah jam lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "104",
+      "read": {
+        "date": "2026-10-14",
+        "time": "10:15",
+        "matched": "15 menit lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "105",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "106",
+      "read": {
+        "date": "2026-10-14",
+        "time": "10:00",
+        "matched": "jam 10"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "107",
+      "read": {
+        "date": "2026-10-19",
+        "time": "09:00",
+        "matched": "Senin depan jam 9"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "108",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "109",
+      "read": {
+        "date": "2026-10-17",
+        "time": "15:00",
+        "matched": "Sabtu sore"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "110",
+      "read": {
+        "date": "2026-10-16",
+        "time": "15:00",
+        "matched": "lusa jam 3 sore"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "111",
+      "read": {
+        "date": "2026-10-14",
+        "time": "14:00",
+        "matched": "jam 2 siang"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "112",
+      "read": {
+        "date": "2026-10-01",
+        "time": "12:00",
+        "matched": "bulan ini"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "113",
+      "read": {
+        "date": "2026-10-15",
+        "time": "06:00",
+        "matched": "besok pagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "114",
+      "read": {
+        "date": "2026-10-14",
+        "time": "20:00",
+        "matched": "malam"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "115",
+      "read": null,
+      "outcome": "missed"
+    },
+    {
+      "id": "116",
+      "read": {
+        "date": "2026-10-14",
+        "time": "20:00",
+        "matched": "malam"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "117",
+      "read": {
+        "date": "2026-11-05",
+        "time": "12:00",
+        "matched": "5/11"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "118",
+      "read": {
+        "date": "2027-08-17",
+        "time": "12:00",
+        "matched": "17 Agustus"
+      },
+      "outcome": "wrong date"
+    },
+    {
+      "id": "119",
+      "read": {
+        "date": "2026-10-15",
+        "time": "19:00",
+        "matched": "Kamis, 15 Oktober 2026 pukul 19.00 WIB"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "120",
+      "read": {
+        "date": "2026-10-14",
+        "time": "12:00",
+        "matched": "jam 12 siang"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "121",
+      "read": {
+        "date": "2026-10-24",
+        "time": "12:00",
+        "matched": "tgl 24 Okt"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "122",
+      "read": {
+        "date": "2026-10-14",
+        "time": "10:15",
+        "matched": "15 menit lagi"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "123",
+      "read": {
+        "date": "2026-10-19",
+        "time": "08:00",
+        "matched": "Senin jam 8"
+      },
+      "outcome": "right"
+    },
+    {
+      "id": "124",
+      "read": {
+        "date": "2026-11-01",
+        "time": "12:00",
+        "matched": "tanggal 1 sampai 3 November"
+      },
+      "outcome": "right"
+    }
+  ]
+}

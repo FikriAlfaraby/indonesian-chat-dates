@@ -1,0 +1,9 @@
+{
+  "name": "indonesian-chat-dates-measure",
+  "private": true,
+  "type": "module",
+  "description": "Runs the phrases through chrono's Indonesian parser.",
+  "dependencies": {
+    "chrono-node": "2.10.3"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "indonesian-chat-dates",
+  "version": "0.1.0",
+  "description": "124 dates and times written the way Indonesians type them in chat, with the moment each one means. Measured on chrono's Indonesian parser.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Fikri Alfaraby <fikrialfaraby04@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FikriAlfaraby/indonesian-chat-dates.git"
+  },
+  "files": [
+    "phrases.json"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "lint": "eslint . --max-warnings=0",
+    "check": "npm run lint && npm test",
+    "measure": "cd measure && TZ=Asia/Jakarta node run.mjs ../results/chrono-2.10.3.json",
+    "report": "node scripts/report.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "globals": "^17.13.0"
+  }
+}
